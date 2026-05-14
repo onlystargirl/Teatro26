@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Materiali — Progetto Teatro</title>
+  <meta name="description" content="Materiali, fornitori e risorse utili per la produzione dello spettacolo.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎭</text></svg>">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+
+  <nav class="main-nav" role="navigation" aria-label="Navigazione principale">
+    <a href="index.html" class="logo-box">
+      <div class="logo-circle">PT</div>
+      <span class="logo-name">Progetto Teatro</span>
+    </a>
+    <div class="nav-right">
+      <button class="theme-toggle" id="themeToggle" aria-label="Cambia tema">
+        <span class="toggle-icon" id="toggleIcon">☽</span>
+        <span id="toggleLabel">Chiaro</span>
+      </button>
+      <button class="sidebar-toggle" id="sidebarToggle" aria-label="Apri menu">
+        <span class="bar">☰</span> Menu
+      </button>
+    </div>
+  </nav>
+</div>
+<div class="sidebar-overlay" id="sidebarOverlay"></div>
+<aside class="sidebar" id="sidebar" role="navigation" aria-label="Menu principale">
+  <div class="sidebar-header"><span class="sidebar-brand">Progetto Teatro</span><button class="sidebar-close" id="sidebarClose" aria-label="Chiudi menu">✕</button></div>
+  <nav class="sidebar-nav">
+    <a href="index.html"><span class="link-num">00.</span>Home</a>
+    <a href="spettacolo.html"><span class="link-num">01.</span>Spettacolo</a>
+    <a href="copione.html"><span class="link-num">02.</span>Copione</a>
+    <a href="musiche.html"><span class="link-num">03.</span>Musiche</a>
+    <a href="personaggi.html"><span class="link-num">04.</span>Cast</a>
+    <a href="calendario.html"><span class="link-num">05.</span>Calendario</a>
+    <a href="galleria.html"><span class="link-num">06.</span>Galleria</a>
+    <a href="cantico.html"><span class="link-num">07.</span>Cantico</a>
+    <a href="materiali.html"><span class="link-num">08.</span>Materiali</a>
+    <a href="contatti.html"><span class="link-num">09.</span>Contatti</a>
+  </nav>
+  <div class="sidebar-footer">Stagione 2026</div>
+</aside>
+<div class="container">
+
+  <header class="page-hero reveal">
+    <span class="hero-label">Risorse</span>
+    <h1>Materiali</h1>
+    <p>Fornitori, riferimenti e link utili per la produzione dello spettacolo.</p>
+  </header>
+
+  <main class="section">
+    <div class="reveal" style="overflow-x:auto;">
+      <table class="styled-table">
+        <thead>
+          <tr>
+            <th>Materiale / Fornitore</th>
+            <th>Link</th>
+            <th>Note</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Costumi (Abiti rossi e azzurri)</td>
+            <td><a href="#" target="_blank" rel="noopener">Sartoria Teatrale →</a></td>
+            <td>Noleggio abiti per Francesco, Diavolo e cast</td>
+          </tr>
+          <tr>
+            <td>Luci e Proiettori LED</td>
+            <td><a href="#" target="_blank" rel="noopener">Service Audio/Luci →</a></td>
+            <td>Piazzamento fari per la Sala Consiliare</td>
+          </tr>
+          <tr>
+            <td>Stampe Copione e Locandine</td>
+            <td><a href="#" target="_blank" rel="noopener">Tipografia Locale →</a></td>
+            <td>15 copie rilegate + 50 locandine A3</td>
+          </tr>
+          <tr>
+            <td>Microfoni ad Archetto</td>
+            <td><a href="#" target="_blank" rel="noopener">Service Audio/Luci →</a></td>
+            <td>Noleggio 6 microfoni wireless per i protagonisti</td>
+          </tr>
+          <tr>
+            <td>Elementi Scenografici (Teli, fondali)</td>
+            <td><a href="#" target="_blank" rel="noopener">Brico / Fai da te →</a></td>
+            <td>Materiali grezzi per la costruzione della scena</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p style="margin-top:36px;color:var(--text-dim);font-size:0.82rem;letter-spacing:0.5px;">
+      ⓘ &nbsp;Tabella materiali e fornitori tecnici per la messa in scena.
+    </p>
+  </main>
+
+  <footer class="site-footer">
+    <span class="footer-brand">Progetto Teatro</span>
+    <p class="footer-sub">© 2026 Tutti i diritti riservati.</p>
+    <span class="engineer-signature">Design curated by Ingeniere</span>
+  </footer>
+
+</div>
+<script src="script.js"></script>
+</body>
+</html>
