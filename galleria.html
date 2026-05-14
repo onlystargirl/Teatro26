@@ -1,140 +1,249 @@
 <!doctype html>
 <html lang="it">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Galleria — Progetto Teatro</title>
   <meta name="description" content="Galleria fotografica e video dello spettacolo: backstage e prove.">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎭</text></svg>">
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎭</text></svg>">
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-<div class="container">
+  <div class="container">
 
-  <nav class="main-nav" role="navigation" aria-label="Navigazione principale">
-    <a href="index.html" class="logo-box">
-      <div class="logo-circle">PT</div>
-      <span class="logo-name">Progetto Teatro</span>
-    </a>
-    <div class="nav-right">
-      <button class="theme-toggle" id="themeToggle" aria-label="Cambia tema">
-        <span class="toggle-icon" id="toggleIcon">☽</span>
-        <span id="toggleLabel">Chiaro</span>
-      </button>
-      <button class="sidebar-toggle" id="sidebarToggle" aria-label="Apri menu">
-        <span class="bar">☰</span> Menu
-      </button>
-    </div>
-  </nav>
-</div>
-<div class="sidebar-overlay" id="sidebarOverlay"></div>
-<aside class="sidebar" id="sidebar" role="navigation" aria-label="Menu principale">
-  <div class="sidebar-header"><span class="sidebar-brand">Progetto Teatro</span><button class="sidebar-close" id="sidebarClose" aria-label="Chiudi menu">✕</button></div>
-  <nav class="sidebar-nav">
-    <a href="index.html"><span class="link-num">00.</span>Home</a>
-    <a href="spettacolo.html"><span class="link-num">01.</span>Spettacolo</a>
-    <a href="copione.html"><span class="link-num">02.</span>Copione</a>
-    <a href="musiche.html"><span class="link-num">03.</span>Musiche</a>
-    <a href="personaggi.html"><span class="link-num">04.</span>Cast</a>
-    <a href="calendario.html"><span class="link-num">05.</span>Calendario</a>
-    <a href="galleria.html"><span class="link-num">06.</span>Galleria</a>
-    <a href="cantico.html"><span class="link-num">07.</span>Cantico</a>
-    <a href="materiali.html"><span class="link-num">08.</span>Materiali</a>
-    <a href="contatti.html"><span class="link-num">09.</span>Contatti</a>
-  </nav>
-  <div class="sidebar-footer">Stagione 2026</div>
-</aside>
-<div class="container">
-
-  <header class="page-hero reveal">
-    <span class="hero-label">Archivio Visivo</span>
-    <h1>Galleria</h1>
-    <p>Foto e video dalle prove, dal backstage e dai momenti di creazione collettiva.</p>
-  </header>
-
-  <main class="section">
-    <div class="featured-video-section reveal" style="max-width: 900px; margin: 0 auto 80px;">
-      <div class="video-wrapper" style="border-radius: 12px; overflow: hidden; box-shadow: 0 15px 40px rgba(0,0,0,0.6); border: 1px solid var(--border); margin-bottom: 40px;">
-        <video src="lv_7582050462321495349_20260514182855.mp4" controls preload="metadata" style="width: 100%; display: block; aspect-ratio: 16/9; object-fit: cover;"></video>
+    <nav class="main-nav" role="navigation" aria-label="Navigazione principale">
+      <a href="index.html" class="logo-box">
+        <div class="logo-circle">PT</div>
+        <span class="logo-name">Progetto Teatro</span>
+      </a>
+      <div class="nav-right">
+        <button class="theme-toggle" id="themeToggle" aria-label="Cambia tema">
+          <span class="toggle-icon" id="toggleIcon">☽</span>
+          <span id="toggleLabel">Chiaro</span>
+        </button>
+        <button class="sidebar-toggle" id="sidebarToggle" aria-label="Apri menu">
+          <span class="bar">☰</span> Menu
+        </button>
       </div>
-      
-      <div class="dedication-letter prose" style="text-align: justify; color: var(--text-dim); font-size: 1.15rem; line-height: 1.85; margin-bottom: 20px;">
-        <h2 style="font-family: 'Cormorant Garamond', serif; font-size: 3rem; color: var(--accent); text-align: center; font-style: italic; margin-bottom: 35px; line-height: 1.1;">A voi, dal vostro Ingegnere.</h2>
-        
-        <p>Il mio mondo è sempre stato fatto di regole precise. Schermi freddi, tastiere, linee di codice infinite. Se scrivo un comando in un certo modo, la macchina obbedisce senza esitare. Se sbaglio una virgola, il sistema si ferma e mi avvisa. C’è una logica rassicurante e perfetta nell'ingegneria: ogni problema ha una sua formula, ogni errore può essere corretto, tutto è sempre calcolabile e prevedibile. Ma poi, in mezzo a questa perfezione matematica, ci siete stati voi.</p>
+    </nav>
+  </div>
+  <div class="sidebar-overlay" id="sidebarOverlay"></div>
+  <aside class="sidebar" id="sidebar" role="navigation" aria-label="Menu principale">
+    <div class="sidebar-header"><span class="sidebar-brand">Progetto Teatro</span><button class="sidebar-close"
+        id="sidebarClose" aria-label="Chiudi menu">✕</button></div>
+    <nav class="sidebar-nav">
+      <a href="index.html"><span class="link-num">00.</span>Home</a>
+      <a href="spettacolo.html"><span class="link-num">01.</span>Spettacolo</a>
+      <a href="copione.html"><span class="link-num">02.</span>Copione</a>
+      <a href="musiche.html"><span class="link-num">03.</span>Musiche</a>
+      <a href="personaggi.html"><span class="link-num">04.</span>Cast</a>
+      <a href="calendario.html"><span class="link-num">05.</span>Calendario</a>
+      <a href="galleria.html"><span class="link-num">06.</span>Galleria</a>
+      <a href="cantico.html"><span class="link-num">07.</span>Cantico</a>
+      <a href="materiali.html"><span class="link-num">08.</span>Materiali</a>
+      <a href="contatti.html"><span class="link-num">09.</span>Contatti</a>
+    </nav>
+    <div class="sidebar-footer">Stagione 2026</div>
+  </aside>
+  <div class="container">
 
-        <p>Vi ho osservati da dietro le quinte. Da dietro lo schermo luminoso del mio computer, mentre costruivo riga dopo riga questo sito web. Mentre voi sudavate nella Sala Consiliare, io stavo qui, a cercare la sfumatura di colore giusta per i pulsanti, a organizzare i vostri nomi nel file del cast, a impaginare i testi del copione. All'inizio, devo confessarlo, per me eravate solo dei dati. Eravate stringhe di testo da formattare in HTML, fotografie in formato JPEG da caricare dentro una griglia, link da far funzionare. Siete partiti come un progetto tecnico. Ma poi ho iniziato a guardare i video. Ho iniziato a leggere davvero le parole che stavate recitando. Ho ascoltato gli audio delle prove, le vostre risate spezzate dalla fatica, la musica che accompagnava i vostri passi. E, lentamente, ho capito che quello che stavate costruendo là fuori sfuggiva a qualsiasi logica, a qualsiasi algoritmo io potessi mai scrivere.</p>
+    <header class="page-hero reveal">
+      <span class="hero-label">Archivio Visivo</span>
+      <h1>Galleria</h1>
+      <p>Foto e video dalle prove, dal backstage e dai momenti di creazione collettiva.</p>
+    </header>
 
-        <p>Ho visto un gruppo di ragazzi che all’inizio faticavano persino a guardarsi negli occhi. Ragazzi carichi di tutte le paure tipiche di questa età, in cui il giudizio degli altri pesa come un macigno e la cosa più sicura e facile da fare è nascondersi, fare un passo indietro, rimanere nell'ombra. Ma voi avete fatto l'esatto opposto. Giovedì dopo giovedì, settimana dopo settimana, vi siete spogliati di quelle corazze pesanti. Avete rinunciato al controllo, vi siete buttati nel vuoto e, miracolosamente, avete imparato a volare insieme. E io guardavo questo miracolo prendere forma, affascinato da come l'arte teatrale potesse trasformare l'insicurezza in pura energia.</p>
+    <main class="section">
+      <div class="featured-video-section reveal" style="max-width: 900px; margin: 0 auto 80px;">
+        <div class="video-wrapper"
+          style="border-radius: 12px; overflow: hidden; box-shadow: 0 15px 40px rgba(0,0,0,0.6); border: 1px solid var(--border); margin-bottom: 40px;">
+          <video src="lv_7582050462321495349_20260514182855.mp4" controls preload="metadata"
+            style="width: 100%; display: block; aspect-ratio: 16/9; object-fit: cover;"></video>
+        </div>
 
-        <p>Mentre io lottavo con i bug del sito e cercavo di far allineare perfettamente i margini, voi lottavate con qualcosa di molto più spaventoso e grande: voi stessi. Ho visto <em>Francesco</em> prendere forma non solo come Santo, ma come il simbolo vibrante della vostra ribellione gentile, della vostra voglia di semplicità. Ho visto il <em>Sole</em> e la <em>Luna</em> imparare a splendere senza mai oscurarsi a vicenda. Ho visto il <em>Fuoco</em> bruciare di passione e l’<em>Acqua</em> scorrere limpida per accogliere. Ho visto il <em>Diavolo</em> e il <em>Lupo</em> dare voce alle paure più profonde e inconfessabili, per poi scoprire che quelle stesse paure, se guardate negli occhi e affrontate insieme, fanno molto, molto meno male. Non stavate recitando una semplice parte scolastica. Stavate imparando a essere uomini e donne. Vi stavate costruendo pezzo dopo pezzo.</p>
+        <div class="dedication-letter prose"
+          style="text-align: justify; color: var(--text-dim); font-size: 1.15rem; line-height: 1.85; margin-bottom: 20px;">
+          <h2
+            style="font-family: 'Cormorant Garamond', serif; font-size: 3rem; color: var(--accent); text-align: center; font-style: italic; margin-bottom: 35px; line-height: 1.1;">
+            A noi. Dal vostro Ingegnere.</h2>
 
-        <p>E poi è arrivato il 14 Maggio 2026. La sera del debutto. Il giorno per cui avete vissuto in apnea per mesi interi. Io ero lì, invisibile nel mio angolo, a fare il tifo per voi. Ho sentito fisicamente il rumore del respiro sospeso in quella Sala Consiliare, un attimo infinito prima che tutto avesse inizio. Ho visto il terrore vero, quello che ti paralizza le gambe, incrociarsi nei vostri sguardi e sciogliersi nel momento esatto in cui avete fatto il primo passo sotto i fari. Sotto quelle luci calde, sotto lo sguardo di centinaia di persone, l'ansia si è trasformata in magia. In quell'istante, non eravate più studenti impauriti. Non eravate più ragazzi qualunque. Siete diventati giganti. Una forza inarrestabile della natura. Avete preso un testo di ottocento anni fa, un cantico che sembrava così lontano, e lo avete reso vivo, pulsante, moderno, indissolubilmente vostro.</p>
+          <p>Mi chiamate sempre "l'Ingegnere". Forse perché cerco sempre di organizzare tutto, forse perché mi sono
+            messa a costruire questo sito per noi, o forse perché sembra sempre che io voglia trovare una soluzione
+            logica e quadrata a qualsiasi problema. Ma voglio dirvi un segreto: quando abbiamo messo piede su quel
+            palco, tutta la mia logica è sparita nel nulla. I calcoli, i margini perfetti, le strutture... non contava
+            più niente. Lì sopra non ero un ingegnere. Ero un'attrice, esattamente come voi. Ed ero terrorizzata, ma
+            incredibilmente felice.</p>
 
-        <p>Il teatro è una cosa strana, crudele e bellissima. È l'opposto del mio lavoro. Quando io pubblico un sito web, quello resta lì, immutato nel tempo, identico a se stesso finché qualcuno non spegne un server. Il teatro no. Il teatro nasce e muore nella stessa identica notte. Esiste solo nel momento assoluto in cui accade, in quello scambio di ossigeno tra voi sul palco e chi vi ascolta in platea. Eppure, guardandovi piangere e stringervi dopo l'ultimo applauso, ho capito che non è vero che svanisce. La scenografia di cartone e legno verrà smontata. I costumi rossi del presentatore e gli abiti leggeri azzurri torneranno in un armadio a prendere polvere. Il sipario si è chiuso per sempre su questa edizione del vostro Progetto Teatro. Ma l'energia che avete sprigionato quella sera... quella roba lì non si cancella. Non si cancella la connessione invisibile, quasi sacra, che si è creata tra di voi. Non esiste tasto "Delete" per quello che avete fatto provare a chi vi ha guardato con gli occhi lucidi. E non esiste e non esisterà mai un tasto "Delete" per quello che avete provato voi dentro la cassa toracica.</p>
+          <p>Mentre caricavo le foto e i video per riempire questa galleria, mi sono fermata a guardarci. Ho guardato i
+            nostri volti nei costumi azzurri e rossi, i nostri sorrisi stanchi ma luminosi, i nostri abbracci impacciati
+            che col tempo sono diventati sempre più stretti. Ci ho pensato tanto: all'inizio eravamo solo un gruppo di
+            ragazzi in una stanza, con dei fogli di carta in mano a leggere parole vecchie di ottocento anni. Eravamo
+            distanti. Ognuno con i suoi problemi, le sue verifiche di scuola, i suoi pensieri. Ma piano piano, battuta
+            dopo battuta, è successo qualcosa di dolcissimo.</p>
 
-        <p>Sapete, mi avete insegnato una lezione enorme. Mi avete insegnato che le cose più preziose della vita non sono quelle perfette. Non sono le righe di codice scritte senza errori di sintassi. Le cose più preziose, quelle che ti cambiano l'esistenza, sono umane, vulnerabili, imperfette. Sono sporche di sudore. Sono fatte di battute dimenticate e suggerite disperatamente con lo sguardo dal compagno di fianco. Sono fatte di risate soffocate dietro le quinte mentre qualcuno parla, di mani strette al buio per farsi coraggio a vicenda quando le gambe tremano. Questo sito che ho costruito per voi è solo un contenitore freddo, una struttura vuota. Siete voi che gli avete dato l'anima, riempiendolo con la vostra arte, con i vostri volti, con la vostra fatica.</p>
+          <p>Vi ricordate i nostri giovedì pomeriggio? Quelli in cui fuori faceva freddo, in cui eravamo distrutti dalla
+            stanchezza e volevamo solo tornare a casa a dormire. Eppure eravamo lì. A provare e riprovare la stessa
+            scena, a dimenticarci le battute, a scoppiare a ridere all'improvviso senza riuscire più a fermarci. Quei
+            pomeriggi sono diventati il mio rifugio. Quando la scuola o la vita fuori diventavano troppo pesanti, sapevo
+            che sarei arrivata lì e avrei trovato voi. Voi, con la vostra energia caotica, con le nostre battute
+            interne, con la voglia di fare qualcosa di bello insieme.</p>
 
-        <p>Voglio che vi facciate una promessa. Ogni volta che caricherete questa pagina, ogni volta che la vita vi sembrerà troppo difficile o vi sentirete inadeguati, ogni volta che cliccherete "Play" su quel video qui sopra... ricordatevi di chi eravate quella sera. Ricordatevi che siete stati capaci di prendere la paura e trasformarla in coraggio. Ricordatevi che siete stati capaci di fidarvi l'uno dell'altro ciecamente. Ricordatevi che avete trovato una famiglia, un branco, nel luogo esatto in cui pensavate ci fossero solo compagni di classe di passaggio. Ricordatevi l'esplosione fisica e assordante di quell'applauso finale, il momento in cui avete capito di avercela fatta, il sapore dolce e salato delle lacrime di gioia e la sensazione di assoluta onnipotenza che solo chi ha calcato un palco e ha donato se stesso può capire fino in fondo. Non permettete mai a nessuno, in tutta la vostra vita, di farvi credere che non siete in grado di fare qualcosa di straordinario. Perché io vi ho visti. Vi abbiamo visti tutti. E siete stati pura, inarrestabile, meravigliosa magia.</p>
+          <p>Il <em>Cantico delle Creature</em> ci ha cambiati. Francesco, Sora Luna, Frate Sole, l'Acqua, il Fuoco, il
+            Lupo, il Diavolo... non ci siamo limitati a interpretare una parte. Ci siamo fidati l'uno dell'altro. Sul
+            palco sei costretto a essere vulnerabile, non puoi nasconderti. E noi abbiamo scelto di farci vedere per
+            quello che eravamo, con tutte le nostre insicurezze. Abbiamo pianto, abbiamo perso la pazienza, abbiamo
+            avuto paura di non essere all'altezza. Ma ogni volta che qualcuno cadeva o si bloccava, c'era subito un
+            altro pronto a dargli la battuta, a tendergli la mano, a fargli l'occhiolino di nascosto per dirgli "Ehi, ci
+            sono io, andrà tutto bene".</p>
 
-        <p>Adesso io torno al mio codice, alla mia logica rassicurante, ai miei schermi illuminati nel buio. Ma una parte di voi viene via con me. Grazie per avermi permesso di essere il vostro architetto digitale, l'osservatore silenzioso della vostra crescita, il custode di questa memoria preziosa. Siete stati e sarete il progetto più bello, più vero e più commovente su cui io abbia mai lavorato in tutta la mia carriera.</p>
-        
-        <p>E vi prometto una cosa: finché i miei server saranno accesi, finché questo dominio esisterà, finché io avrò fiato per scrivere una linea di codice... la vostra luce non smetterà mai di brillare in questo piccolo angolo di internet. Siete stati immensi. Siete eterni.</p>
-        
-        <p style="text-align: right; margin-top: 60px; font-style: italic; font-weight: 700; color: var(--text); font-size: 1.3rem; letter-spacing: 0.5px;">— Il vostro fedele Ingegnere</p>
+          <p>E poi è arrivato il 14 Maggio 2026. La Sala Consiliare. Il profumo del teatro, quell'odore strano di
+            polvere e aspettative. Ricordo il buio dietro le quinte. Eravamo tutti lì, stretti gli uni agli altri come
+            pinguini per non morire d'ansia. Vi ho tenuto le mani al buio. Sentivo le vostre mani tremare esattamente
+            come tremavano le mie. L'ingegnere che è in me vi direbbe che il cuore batteva a frequenze altissime, fuori
+            controllo. L'attrice che è in me vi dice che in quel momento stavamo respirando tutti insieme, come se
+            fossimo un unico cuore gigante.</p>
+
+          <p>Quando le luci si sono accese e abbiamo fatto il primo passo sul palco, la magia è esplosa. Tutto il
+            terrore si è trasformato in pura adrenalina. Vi guardavo muovervi sotto i riflettori e pensavo: "Ma quanto
+            siamo belli?". Non perché fossimo perfetti (qualche papera l'abbiamo fatta!), ma perché eravamo immensamente
+            veri. Ci abbiamo messo l'anima in quel testo. Abbiamo dimostrato a noi stessi e a tutti gli altri che, se
+            uniamo le forze, siamo capaci di fare scintille. Siamo diventati una famiglia, una famiglia strana,
+            teatrale, incasinata, ma pur sempre una famiglia.</p>
+
+          <p>Ho voluto costruire questo spazio su internet perché so quanto la memoria sia fragile. Il teatro dura un
+            secondo e poi finisce, restano solo gli applausi. Ma io volevo che noi avessimo un posto in cui tornare.
+            Guardate il video qui sopra. Guardate le foto. Quando tra qualche mese, o magari tra anni, vi sentirete
+            tristi, o penserete di non valere abbastanza, aprite questa pagina. Guardate cosa siete stati in grado di
+            fare. Guardate i vostri occhi brillare. Ricordatevi di quanto siete stati coraggiosi e di quanto amore siete
+            riusciti a trasmettere al pubblico e a voi stessi.</p>
+
+          <p>Se dovessi calcolare con una formula matematica la probabilità di trovare un gruppo così speciale, il
+            risultato sarebbe zero. È stato un piccolo, meraviglioso miracolo. E se mi chiamate Ingegnere, allora
+            lasciate che vi dica la cosa più dolce che un ingegnere possa dire: voi siete l'unico progetto della mia
+            vita che non ha bisogno di essere aggiustato, perché siete perfetti così come siete.</p>
+
+          <p>Grazie per le risate. Grazie per avermi sopportata quando facevo la perfettina. Grazie per aver condiviso
+            con me la paura e la gioia più grande. Qualunque cosa accada in futuro, noi saremo per sempre legati da
+            questo filo invisibile. Siete stati i miei compagni di viaggio migliori, la mia scena preferita, il mio
+            applauso più bello. Vi voglio un bene infinito.</p>
+
+          <p
+            style="text-align: right; margin-top: 50px; font-style: italic; font-weight: 700; color: var(--text); font-size: 1.3rem;">
+            — Il vostro Ingegnere, s. </p>
+        </div>
       </div>
-    </div>
-    
-    <div class="divider"></div>
 
-    <h2 class="section-heading reveal" style="text-align: center; margin-bottom: 40px;">Archivio Prove e Backstage</h2>
-    <div class="gallery-grid reveal">
+      <div class="divider"></div>
 
-      <!-- Foto -->
-      <div class="gallery-item"><img src="IMG-20260514-WA0018.jpeg" alt="Foto"><div class="gallery-overlay"><h3>Scatto</h3><span style="font-size:1.4rem;">🎭</span></div></div>
-      <div class="gallery-item"><img src="IMG-20260514-WA0022.jpeg" alt="Foto"><div class="gallery-overlay"><h3>Dietro le quinte</h3><span style="font-size:1.4rem;">🎬</span></div></div>
-      <div class="gallery-item"><img src="IMG-20260514-WA0045.jpg" alt="Foto"><div class="gallery-overlay"><h3>Prove</h3><span style="font-size:1.4rem;">✦</span></div></div>
-      <div class="gallery-item"><img src="IMG-20260514-WA0046.jpg" alt="Foto"><div class="gallery-overlay"><h3>Scatto</h3><span style="font-size:1.4rem;">💡</span></div></div>
-      <div class="gallery-item"><img src="IMG-20260514-WA0047.jpg" alt="Foto"><div class="gallery-overlay"><h3>Prove</h3><span style="font-size:1.4rem;">🎭</span></div></div>
-      <div class="gallery-item"><img src="IMG-20260514-WA0051.jpg" alt="Foto"><div class="gallery-overlay"><h3>Momenti</h3><span style="font-size:1.4rem;">✦</span></div></div>
-      <div class="gallery-item"><img src="IMG-20260514-WA0052.jpg" alt="Foto"><div class="gallery-overlay"><h3>Scatto</h3><span style="font-size:1.4rem;">🎬</span></div></div>
-      <div class="gallery-item"><img src="IMG-20260514-WA0056.jpg" alt="Foto"><div class="gallery-overlay"><h3>Costumi</h3><span style="font-size:1.4rem;">🎭</span></div></div>
-      <div class="gallery-item"><img src="IMG-20260514-WA0067.jpg" alt="Foto"><div class="gallery-overlay"><h3>Dietro le quinte</h3><span style="font-size:1.4rem;">💡</span></div></div>
-      <div class="gallery-item"><img src="IMG-20260514-WA0070.jpg" alt="Foto"><div class="gallery-overlay"><h3>Momenti</h3><span style="font-size:1.4rem;">✦</span></div></div>
-      <div class="gallery-item"><img src="IMG-20260514-WA0079.jpg" alt="Foto"><div class="gallery-overlay"><h3>Prove</h3><span style="font-size:1.4rem;">🎬</span></div></div>
+      <h2 class="section-heading reveal" style="text-align: center; margin-bottom: 40px;">Archivio Prove e Backstage
+      </h2>
+      <div class="gallery-grid reveal">
 
-      <!-- Video -->
-      <div class="gallery-item">
-        <video src="VID-20260514-WA0020.mp4" controls preload="metadata" style="width:100%; height:100%; object-fit:cover;"></video>
-        <div class="gallery-overlay" style="pointer-events: none;"><h3>Video Backstage</h3><span style="font-size:1.4rem;">▶</span></div>
+        <!-- Foto -->
+        <div class="gallery-item"><img src="IMG-20260514-WA0018.jpeg" alt="Foto">
+          <div class="gallery-overlay">
+            <h3>Scatto</h3><span style="font-size:1.4rem;">🎭</span>
+          </div>
+        </div>
+        <div class="gallery-item"><img src="IMG-20260514-WA0022.jpeg" alt="Foto">
+          <div class="gallery-overlay">
+            <h3>Dietro le quinte</h3><span style="font-size:1.4rem;">🎬</span>
+          </div>
+        </div>
+        <div class="gallery-item"><img src="IMG-20260514-WA0045.jpg" alt="Foto">
+          <div class="gallery-overlay">
+            <h3>Prove</h3><span style="font-size:1.4rem;">✦</span>
+          </div>
+        </div>
+        <div class="gallery-item"><img src="IMG-20260514-WA0046.jpg" alt="Foto">
+          <div class="gallery-overlay">
+            <h3>Scatto</h3><span style="font-size:1.4rem;">💡</span>
+          </div>
+        </div>
+        <div class="gallery-item"><img src="IMG-20260514-WA0047.jpg" alt="Foto">
+          <div class="gallery-overlay">
+            <h3>Prove</h3><span style="font-size:1.4rem;">🎭</span>
+          </div>
+        </div>
+        <div class="gallery-item"><img src="IMG-20260514-WA0051.jpg" alt="Foto">
+          <div class="gallery-overlay">
+            <h3>Momenti</h3><span style="font-size:1.4rem;">✦</span>
+          </div>
+        </div>
+        <div class="gallery-item"><img src="IMG-20260514-WA0052.jpg" alt="Foto">
+          <div class="gallery-overlay">
+            <h3>Scatto</h3><span style="font-size:1.4rem;">🎬</span>
+          </div>
+        </div>
+        <div class="gallery-item"><img src="IMG-20260514-WA0056.jpg" alt="Foto">
+          <div class="gallery-overlay">
+            <h3>Costumi</h3><span style="font-size:1.4rem;">🎭</span>
+          </div>
+        </div>
+        <div class="gallery-item"><img src="IMG-20260514-WA0067.jpg" alt="Foto">
+          <div class="gallery-overlay">
+            <h3>Dietro le quinte</h3><span style="font-size:1.4rem;">💡</span>
+          </div>
+        </div>
+        <div class="gallery-item"><img src="IMG-20260514-WA0070.jpg" alt="Foto">
+          <div class="gallery-overlay">
+            <h3>Momenti</h3><span style="font-size:1.4rem;">✦</span>
+          </div>
+        </div>
+        <div class="gallery-item"><img src="IMG-20260514-WA0079.jpg" alt="Foto">
+          <div class="gallery-overlay">
+            <h3>Prove</h3><span style="font-size:1.4rem;">🎬</span>
+          </div>
+        </div>
+
+        <!-- Video -->
+        <div class="gallery-item">
+          <video src="VID-20260514-WA0020.mp4" controls preload="metadata"
+            style="width:100%; height:100%; object-fit:cover;"></video>
+          <div class="gallery-overlay" style="pointer-events: none;">
+            <h3>Video Backstage</h3><span style="font-size:1.4rem;">▶</span>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <video src="VID-20260514-WA0038.mp4" controls preload="metadata"
+            style="width:100%; height:100%; object-fit:cover;"></video>
+          <div class="gallery-overlay" style="pointer-events: none;">
+            <h3>Video Prove</h3><span style="font-size:1.4rem;">▶</span>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <video src="VID-20260514-WA0074.mp4" controls preload="metadata"
+            style="width:100%; height:100%; object-fit:cover;"></video>
+          <div class="gallery-overlay" style="pointer-events: none;">
+            <h3>Momento speciale</h3><span style="font-size:1.4rem;">▶</span>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <video src="VID-20260514-WA0139(1).mp4" controls preload="metadata"
+            style="width:100%; height:100%; object-fit:cover;"></video>
+          <div class="gallery-overlay" style="pointer-events: none;">
+            <h3>Clip</h3><span style="font-size:1.4rem;">▶</span>
+          </div>
+        </div>
+
       </div>
-      <div class="gallery-item">
-        <video src="VID-20260514-WA0038.mp4" controls preload="metadata" style="width:100%; height:100%; object-fit:cover;"></video>
-        <div class="gallery-overlay" style="pointer-events: none;"><h3>Video Prove</h3><span style="font-size:1.4rem;">▶</span></div>
-      </div>
-      <div class="gallery-item">
-        <video src="VID-20260514-WA0074.mp4" controls preload="metadata" style="width:100%; height:100%; object-fit:cover;"></video>
-        <div class="gallery-overlay" style="pointer-events: none;"><h3>Momento speciale</h3><span style="font-size:1.4rem;">▶</span></div>
-      </div>
-      <div class="gallery-item">
-        <video src="VID-20260514-WA0139(1).mp4" controls preload="metadata" style="width:100%; height:100%; object-fit:cover;"></video>
-        <div class="gallery-overlay" style="pointer-events: none;"><h3>Clip</h3><span style="font-size:1.4rem;">▶</span></div>
-      </div>
 
-    </div>
+      <p style="margin-top:40px;color:var(--text-dim);font-size:0.85rem;text-align:center;letter-spacing:1px;">
+        Le foto reali verranno aggiunte durante le prove.
+      </p>
+    </main>
 
-    <p style="margin-top:40px;color:var(--text-dim);font-size:0.85rem;text-align:center;letter-spacing:1px;">
-      Le foto reali verranno aggiunte durante le prove.
-    </p>
-  </main>
+    <footer class="site-footer">
+      <span class="footer-brand">Progetto Teatro</span>
+      <p class="footer-sub">© 2026 Tutti i diritti riservati.</p>
+      <span class="engineer-signature">Design curated by Ingeniere</span>
+    </footer>
 
-  <footer class="site-footer">
-    <span class="footer-brand">Progetto Teatro</span>
-    <p class="footer-sub">© 2026 Tutti i diritti riservati.</p>
-    <span class="engineer-signature">Design curated by Ingeniere</span>
-  </footer>
-
-</div>
-<script src="script.js"></script>
+  </div>
+  <script src="script.js"></script>
 </body>
+
 </html>
