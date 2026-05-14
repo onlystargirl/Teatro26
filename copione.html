@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Copione — Progetto Teatro</title>
+  <meta name="description" content="Testo completo del copione con filtro per personaggio.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎭</text></svg>">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <nav class="main-nav" role="navigation" aria-label="Navigazione principale">
+    <a href="index.html" class="logo-box"><div class="logo-circle">PT</div><span class="logo-name">Progetto Teatro</span></a>
+    <div class="nav-right">
+      <button class="theme-toggle" id="themeToggle" aria-label="Cambia tema"><span class="toggle-icon" id="toggleIcon">☽</span><span id="toggleLabel">Chiaro</span></button>
+      <button class="sidebar-toggle" id="sidebarToggle" aria-label="Apri menu"><span class="bar">☰</span> Menu</button>
+    </div>
+  </nav>
+</div>
+<div class="sidebar-overlay" id="sidebarOverlay"></div>
+<aside class="sidebar" id="sidebar" role="navigation" aria-label="Menu principale">
+  <div class="sidebar-header"><span class="sidebar-brand">Progetto Teatro</span><button class="sidebar-close" id="sidebarClose" aria-label="Chiudi menu">✕</button></div>
+  <nav class="sidebar-nav">
+    <a href="index.html"><span class="link-num">00.</span>Home</a>
+    <a href="spettacolo.html"><span class="link-num">01.</span>Spettacolo</a>
+    <a href="copione.html"><span class="link-num">02.</span>Copione</a>
+    <a href="musiche.html"><span class="link-num">03.</span>Musiche</a>
+    <a href="personaggi.html"><span class="link-num">04.</span>Cast</a>
+    <a href="calendario.html"><span class="link-num">05.</span>Calendario</a>
+    <a href="galleria.html"><span class="link-num">06.</span>Galleria</a>
+    <a href="cantico.html"><span class="link-num">07.</span>Cantico</a>
+    <a href="materiali.html"><span class="link-num">08.</span>Materiali</a>
+    <a href="contatti.html"><span class="link-num">09.</span>Contatti</a>
+  </nav>
+  <div class="sidebar-footer">Stagione 2026</div>
+</aside>
+<div class="container">
+
+  <header class="page-hero reveal">
+    <span class="hero-label">Testo</span>
+    <h1>Il Copione</h1>
+    <p>Testo completo dello spettacolo. Filtra per personaggio per trovare le tue battute.</p>
+  </header>
+
+  <main class="section">
+    <div class="copione-wrap">
+
+      <div class="copione-filter reveal" style="display:flex; flex-wrap:wrap; gap:20px; align-items:flex-end; justify-content:space-between;">
+        <div>
+          <label for="personaggioSelect">Filtra per personaggio</label>
+          <select id="personaggioSelect" onchange="filtraCopione(this.value)">
+            <option value="tutti">Copione completo</option>
+          <option value="Frate Sole">Frate Sole</option>
+          <option value="Sora Luna">Sora Luna</option>
+          <option value="Sorelle Stelle">Sorelle Stelle</option>
+          <option value="Sorella Vento">Sorella Vento</option>
+          <option value="Frate Fuoco">Frate Fuoco</option>
+          <option value="Sora Acqua">Sora Acqua</option>
+          <option value="Sora Madre Terra">Sora Madre Terra</option>
+          <option value="Il Lupo">Il Lupo (spacciatore)</option>
+          <option value="Sorella Morte Corporale">Sorella Morte Corporale</option>
+          <option value="Il Diavolo">Il Diavolo</option>
+          <option value="Sorella Povertà">Sorella Povertà</option>
+          <option value="Francesco">Francesco</option>
+          <option value="Voce Narrante">Voce Narrante</option>
+        </select>
+        </div>
+        <a href="copione.pdf" class="btn-accent" target="_blank" download style="padding: 12px 24px; font-size: 0.75rem;">📄 Scarica PDF Copione</a>
+      </div>
+
+      <div id="copione-content" class="reveal">
+
+        <!-- ═══ INTRODUZIONE ═══ -->
+        <div class="battuta" data-tags="tutti">
+          <p><strong>INTRODUZIONE</strong></p>
+          <p><em>(Luci basse. Sul palco un coro di studenti sparsi, ognuno con un cellulare acceso. Notifiche, vibrazioni, suoni. Il palco è rumoroso, frenetico.)</em><br>Brano 1 (sottofondo): The Social Network OST – Hand Covers Bruise</p>
+        </div>
+
+        <div class="battuta" data-tags="tutti Voce Narrante">
+          <p><strong>VOCE NARRANTE</strong> (voce ferma): Viviamo in un mondo che corre.<br>Notifiche<br>Scadenze,<br>Impegni.<br>Connessione continua…<br>ma spesso nessun contatto vero.</p>
+        </div>
+
+        <div class="battuta" data-tags="tutti">
+          <p><em>(Gli studenti si muovono freneticamente, ognuno preso dal proprio telefono.)</em><br>Consumiamo cose.<br>Consumiamo tempo.</p>
+        </div>
+
+        <div class="battuta" data-tags="tutti Voce Narrante">
+          <p><strong>VOCE NARRANTE</strong>: A volte… consumiamo anche noi stessi.<br>Eppure,<br>anche oggi,<br>proprio oggi,<br>potrebbe apparire qualcuno capace di camminare controcorrente.<br>Non un eroe. Non un influencer. Non un predicatore perfetto.<br>(lento) Ma un uomo… stropicciato, vulnerabile, appassionato.<br><em>(lentamente si spengono i telefoni. Rumori digitali si affievoliscono.)</em></p>
+        </div>
+
+        <div class="battuta" data-tags="tutti Voce Narrante">
+          <p>Questo spettacolo nasce da una domanda semplice ma potente:<br>"cosa farebbe San Francesco se vivesse oggi?"<br>Viviamo in un tempo complesso:<br>guerre che non sembrano finire,<br>povertà che cresce dietro l'angolo,<br>crisi climatiche che minacciano il futuro del pianeta,<br>persone che corrono senza più trovare un senso.<br>In questo rumore, in questa confusione, ci siamo chiesti:<br>"avrebbe ancora qualcosa da dirci un giovane di Assisi vissuto ottocento anni fa?"<br>La risposta, per noi, è SÌ.<br>E forse, più che mai.</p>
+        </div>
+
+        <!-- ═══ PRIMA SCENA ═══ -->
+        <div class="battuta" data-tags="tutti">
+          <p><strong>PRIMA SCENA: "Controcorrente"</strong><br><em>(Francesco cammina lentamente mentre intorno tutti si muovono velocissimi.)</em></p>
+          <p>1: Dai, muoviti! È tardi!<br>2: Hai visto l'ultima storia? Sta spaccando!<br>3: Se non produci, non vali.<br>4: Se non corri, resti indietro.</p>
+        </div>
+
+        <div class="battuta" data-tags="tutti Francesco">
+          <p><strong>FRANCESCO</strong> (calmo, al 4 ragazzo): Perché dovrei correre? La vita non è una gara.<br>4: (si ferma, confuso) Ma… tutti corrono.<br><strong>FRANCESCO</strong>: Appunto.<br><em>(tutti si fermano e lo osservano)</em><br>3: (ironico) E tu chi saresti? Un ribelle?<br><strong>FRANCESCO</strong> (sorridendo): Solo uno che prova a respirare. <em>(Si sdraia o siede a terra, semplice.)</em> In un mondo che vuole tutto e subito… io scelgo il "poco", che non è miseria. È libertà.<br><em>(Francesco si alza, guarda gli altri.)</em> Non devo convincere nessuno. Non ho ricette, né dogmi. Sono soltanto… un uomo che prova a vivere con leggerezza. Con verità. Con amore.</p>
+        </div>
+
+        <div class="battuta" data-tags="tutti Voce Narrante">
+          <p><strong>VOCE NARRANTE</strong>: E così comincia il nostro viaggio. Con un ragazzo qualsiasi, che sceglie di non correre, in un mondo che non sa più fermarsi.<br><em>(Luci sfumano.)</em></p>
+        </div>
+
+        <!-- ═══ QUADRO 1: Frate Sole ═══ -->
+        <div class="battuta" data-tags="tutti Frate Sole">
+          <p><strong>QUADRO 1: Frate Sole – l'influencer buono</strong><br><em>(Un ragazzo entra correndo con il cellulare in mano. Fa selfie in tutte le direzioni. Ogni volta che scatta, parte un FLASH breve.)</em></p>
+          <p><strong>CORO</strong> (mormorio ritmato, quasi un beat): Like.<br>Scrolla.<br>Condividi.<br>Ancora.<br>Ancora.</p>
+          <p><strong>INFLUENCER</strong> (sorriso tirato, voce energica): Ciao ragazzi!<br>Nuovo vlog!<br>Oggi vi faccio vedere la mia vita perfetta!<br>Guardate che luce!<br>Che stile!<br>Che successo!</p>
+        </div>
+
+        <div class="battuta" data-tags="tutti Voce Narrante">
+          <p><strong>VOCE NARRANTE</strong> (lieve, quasi poetica): Ma nessuno vedeva che,<br>dopo ogni flash…<br>arrivava un piccolo buio.<br><em>(Il ragazzo abbassa il telefono per un istante: il suo sorriso cade. È stanco, vuoto.)</em></p>
+        </div>
+
+        <div class="battuta" data-tags="tutti Frate Sole Francesco">
+          <p><strong>INFLUENCER</strong>: Devo postare…<br>Devo crescere…<br>Devo essere qualcuno…<br>Perché senza like…<br>senza questa luce…<br>io non sono niente.</p>
+          <p><em>(Entra Francesco)</em><br><strong>FRANCESCO</strong> (calmo, fermo): Perché ti nascondi dietro tutta questa luce?<br><strong>INFLUENCER</strong>: Io? Nascondermi?? Io risplendo! Sono famoso! Tutti mi seguono!<br><strong>FRANCESCO</strong> (gentile): Eppure…<br>tu non guardi mai nessuno negli occhi.<br><em>(Silenzio. Il ragazzo abbassa lentamente il telefono.)</em></p>
+          <p><strong>INFLUENCER</strong> (quasi sussurrando): Perché…<br>nessuno mi vede davvero.<br>Mi vedono… ma non mi guardano.<br>Ho tutto… ma non ho nessuno.<br>Mi manca… mi manca l'amore.<br><strong>FRANCESCO</strong>: E cosa vorresti?<br><strong>INFLUENCER</strong>: Vorrei… che la mia luce servisse.<br>Non solo per farmi vedere… ma per illuminare qualcuno.<br><strong>FRANCESCO</strong> (sorridendo, toccandogli la mano): Allora vieni.<br>Smetti di inseguire la tua luce.<br>E aiutami a portare luce agli altri.<br><em>(Gli prende il telefono. Lo spegne dolcemente.)</em><br>Da oggi… ti chiamerò Frate Sole.<br>Perché la tua luce… non viene dal flash.<br>Viene da qui. <em>(toccandogli il petto)</em></p>
+        </div>
+
+        <div class="battuta" data-tags="tutti">
+          <p><strong>CORO</strong>:<br>«Laudato si', mi' Signore, cum tucte le tue creature,<br>spetialmente messor lo frate Sole,<br>lo qual è iorno, et allumini noi per lui.»</p>
+        </div>
+
+        <!-- ═══ QUADRO 2: Sora Luna ═══ -->
+        <div class="battuta" data-tags="tutti Sora Luna">
+          <p><strong>QUADRO 2 – Sora Luna (ragazza poetessa)</strong><br>Luci soffuse, toni freddi/blu. Sora Luna è seduta con quaderno e penna, assorta.</p>
+          <p><strong>NARRATRICE</strong>:<br>Seduta in disparte,<br>lascia che il cielo le entri nel cuore.<br>Ogni parola che scrive<br>è un passo dentro se stessa:<br>fragile, ma piena di sogni.</p>
+        </div>
+
+        <div class="battuta" data-tags="tutti Sora Luna">
+          <p><strong>SORA LUNA</strong> <em>(recita, voce lenta e intensa):</em><br>BRANO LA LUNA BRANDUARDI<br>Ho voglia di ammalarmi di te…<br>Come luce in tempesta. Brucia.<br>Una voragine mi toglie il respiro.<br>Un pensiero mi assale circonciso.<br>Un tale mi sussurra con lieve sospiro:<br>Ahimè dolente cor mio, che io<br>Sola va bramando te. Brucia.<br>O cor mio arrossa in presenza di te.<br>Tieni stretto il mio malanno.<br>Con chiave per cor mio e tuo.<br>Occhi intrepidi con sol nell'animo.<br>Cor che mi sussulta in mal tuo.<br>Fa ch'io muoia con sorriso tuo.<br>Fa tu deformare quest'amma in me<br>che ustiona ogni mio fievole respiro.<br>Che io non sappia nuotare.<br>Permettimi di perder lentamente il respiro mio.<br>Dimenticami nel tuo piacevole sospiro.<br>Con odio e amor, voglio ammalarmi di te.<br>Asseconda ogni mia voglia. Permettimi<br>di diventare la tua ancora di salvataggio.<br>Lascia che io sia la sola a cui darai<br>Il tuo malanno. Lascia che io trasformi<br>le sofferenze tue in gioia e amore.<br>Lascia il cor tuo custodito in me.</p>
+        </div>
+
+        <div class="battuta" data-tags="tutti Sora Luna Francesco">
+          <p><em>(Francesco entra, si avvicina lentamente senza interromperla, osserva il quaderno.)</em></p>
+          <p><strong>FRANCESCO</strong> <em>(voce calma, sorridendo leggermente):</em><br>Che scrivi qui? Cos'è che ti prende così tanto il cuore?</p>
+          <p><strong>SORA LUNA</strong> <em>(alzando lo sguardo, leggermente imbarazzata ma sincera):</em><br>Parlo… di qualcuno.<br>Di ciò che sento dentro.<br>Non so se è gioia o tormento…</p>
+          <p><strong>FRANCESCO</strong> <em>(annuisce, ascolta con attenzione):</em><br>Vedo un cuore che brilla, anche nel dolore…<br>E come la luna illumina la notte, così le tue parole illuminano ciò che ti circonda.<br>Da oggi ti chiamerò Sora Luna,</p>
+          <p><strong>SORA LUNA</strong> <em>(sorridendo timidamente):</em><br>Sora Luna…</p>
+          <p><strong>FRANCESCO</strong>:<br>sì…. perché porti luce dove c'è buio e sogni dove altri non vedono.</p>
+          <p><strong>SORA LUNA</strong>: Mi piace…</p>
+          <p><strong>FRANCESCO</strong>: Continua a scrivere… e lascia che il tuo cuore parli al mondo.</p>
+          <p><strong>CORO</strong>:<br>Laudato si', mi' Signore, per sora Luna e le stelle:<br>in celu l'ài formate clarite et pretiose et belle.</p>
+        </div>
+
+        <!-- ═══ QUADRO 3: Sorelle Stelle ═══ -->
+        <div class="battuta" data-tags="tutti Sorelle Stelle">
+          <p><strong>QUADRO 3 – Sorelle Stelle</strong><br>Le Stelle entrano in silenzio, ciascuna con un libro. Francesco ascolta in silenzio.</p>
+          <p><strong>STELLA 1</strong> <em>(stupita):</em><br>Più leggo… più mi sembra incredibile.<br>Due storie distanti…<br>due mondi lontani…<br>che però parlano la stessa lingua.</p>
+          <p><strong>STELLA 2</strong>:<br>Abbiamo studiato Siddhartha,<br>il giovane che divenne Buddha.<br>Un principe soffocato nell'abbondanza<br>che lasciò tutto per cercare la verità.</p>
+          <p><strong>STELLA 1</strong>:<br>E poi abbiamo letto di un altro giovane…<br>questa volta ad Assisi.<br>Un ragazzo ricco, vivace, pieno di sogni…<br>che un giorno sentì un richiamo<br>più forte del denaro<br>e lasciò tutto.</p>
+          <p><strong>STELLA 2</strong>: Siddhartha vide il dolore del mondo e non poté più voltarsi dall'altra parte.</p>
+          <p><strong>STELLA 1</strong>: Francesco vide la sofferenza dei poveri e non poté più vivere come prima.</p>
+          <p><strong>STELLA 2</strong>: Entrambi figli amati.<br>Entrambi destinati a una vita comoda.<br>Entrambi… in cammino verso qualcos'altro.</p>
+          <p><strong>STELLA 2</strong>: Due frasi diverse.<br>Due mondi diversi.<br>Stessa luce.</p>
+          <p><strong>STELLA 1</strong>: Abbiamo scoperto che la bontà non ha religione.</p>
+          <p><strong>STELLA 2</strong>: Che la compassione non ha passaporto.</p>
+          <p><strong>STELLA 1</strong>: Che la saggezza non appartiene a una sola via.</p>
+        </div>
+
+        <!-- ═══ QUADRO 4: Sorella Vento ═══ -->
+        <div class="battuta" data-tags="tutti Sorella Vento">
+          <p><strong>QUADRO 4 – Sorella Vento</strong><br><em>(Da un lato entra Sorella Vento, porta uno zaino leggero, qualche foglio. Avanza come chi ascolta prima di parlare.)</em></p>
+          <p><strong>AMIRA</strong> <em>(sorridendo, al pubblico e alle Stelle):</em><br>Scusate se arrivo ora.<br>Ho sentito le vostre parole<br>e mi sono fermata a… respirarle.<br>A volte basta un soffio<br>per capire che non siamo soli.<br><em>(con semplicità)</em> scusate, non mi sono presentata.<br>Mi chiamo Amira.<br>Vengo da un'altra storia,<br>un altro orizzonte,<br>ma la stessa sete.<br>Nella mia fede si dice:<br>«Dio ha fatto di voi popoli e tribù<br>perché vi conosceste,<br>non per separarvi.»<br>Il vento… non ha confini, non ha padroni,<br>non chiede permesso.<br>Passa, tocca, scuote.<br>E poi riparte.</p>
+        </div>
+
+        <div class="battuta" data-tags="tutti Sorella Vento Francesco">
+          <p><strong>FRANCESCO</strong>:<br>Vi ho ascoltati.<br>Tutti. Ognuno diverso. Ognuno prezioso.<br>E mi accorgo che… non siete solo compagni di viaggio.<br>Siete più di questo.<br>Voi, che cercate la verità nella gentilezza…<br>e illuminate senza pretendere…<br>sarete, Sorelle Stelle.<br>E tu <em>(guardando Amira)</em><br>che arrivi come aria nuova<br>e ci ricordi che lo spirito è movimento…<br>sei Sorella Vento della Libertà.</p>
+          <p><strong>CORO</strong>:<br>«Laudato si', mi' Signore, per Frate Vento,<br>et per aere et nubilo et sereno et onne tempo,<br>per lo quale a le tue creature dài sostentamento.»</p>
+        </div>
+
+        <!-- ═══ QUADRO 5: Frate Fuoco ═══ -->
+        <div class="battuta" data-tags="tutti Frate Fuoco">
+          <p><strong>QUADRO 5 – Frate Fuoco – L'Uomo che Brucia e Illumina</strong></p>
+          <p><strong>VOCE NARRANTE</strong>:<br>«A volte la vita accende in noi luci che non abbiamo chiesto.<br>Piccole fiamme che ci rincorrono:<br>paure, rabbie, ricordi che bruciano ancora.<br>Ma anche la luce più inquieta<br>può diventare guida,<br>se qualcuno ci insegna a guardarla senza tremare.»</p>
+          <p><em>(La scena è buia. Al centro scena c'è una candela accesa. Un ragazzo entra di corsa, guardandosi alle spalle.)</em></p>
+          <p><strong>RAGAZZO</strong>: Non… non dovrebbe esserci luce.<br>Non adesso.<br>E invece eccola.<br>Una fiamma. Sempre lei. Sempre io.<br>Sono scappato… Da me stesso.<br>Dalla mia rabbia che mi morde,<br>dal fuoco che porto dentro e che non mi lascia mai in pace.</p>
+          <p><em>(Prova a spegnere la candela con un soffio. La fiamma tremola, ma non si spegne.)</em></p>
+          <p><strong>RAGAZZO</strong>: Non si spegne.<br>Nemmeno adesso.<br>Nemmeno quando prego di non fare più male a nessuno.<br>Ma la fiamma… la fiamma mi segue come un'ombra che brucia.</p>
+        </div>
+
+        <div class="battuta" data-tags="tutti Frate Fuoco Francesco">
+          <p><em>(Entra lentamente Francesco, si ferma accanto al ragazzo senza toccarlo.)</em></p>
+          <p><strong>FRANCESCO</strong>: Chi sei?<br>E perché tremi davanti a una fiamma così piccola?</p>
+          <p><em>(Francesco prende la candela. La osserva un istante… poi soffia con calma. La fiamma si spegne.)</em></p>
+          <p><strong>RAGAZZO</strong>: Sei… riuscito a spegnerla.</p>
+          <p><strong>FRANCESCO</strong>: Non era la fiamma a essere forte.<br>Eri tu… che avevi paura.<br>La paura fa sembrare il fuoco più grande di quello che è.<br>Ma un cuore guidato… può far pace anche con le sue scintille.</p>
+          <p><strong>FRANCESCO</strong>: Sai come voglio chiamarti?<br>Frate Fuoco.<br>Non perché tu abbia distrutto…<br>ma perché hai avuto il coraggio di guardare le tue fiamme negli occhi.<br>Perché hai scelto di non scappare più.<br>Perché dentro di te il fuoco può scaldare, non solo bruciare.</p>
+          <p><strong>RAGAZZO</strong>: Frate Fuoco… mi piace. Sì. Voglio essere questo.</p>
+          <p><strong>CORO</strong>:<br>«Laudato si', mi' Signore, per frate Focu,<br>per lo quale ennallumini la nocte:<br>ed ello è bello et jocundo et robustoso et forte.»</p>
+        </div>
+
+        <!-- ═══ QUADRO 6: Sorella Acqua ═══ -->
+        <div class="battuta" data-tags="tutti Sora Acqua">
+          <p><strong>QUADRO 6 – Sorella Acqua – La Ragazza che Scorre e Accoglie</strong></p>
+          <p><strong>VOCE NARRANTE</strong>:<br>A volte la vita ci travolge con correnti che non abbiamo scelto.<br>Ma anche il cuore più inquieto può diventare sereno,<br>se qualcuno ci insegna a lasciar scorrere ciò che ci turba.</p>
+          <p><em>(Luce azzurra soffusa. Due ragazzi sono già in scena, agitati.)</em></p>
+          <p><strong>RAGAZZO 1</strong> <em>(arrabbiato)</em>: Non capisci mai! Ogni volta è la stessa storia!</p>
+          <p><strong>RAGAZZO 2</strong> <em>(irritato)</em>: E tu pensi di avere sempre ragione! Non ascolti mai!</p>
+          <p><strong>RAGAZZA</strong> <em>(chiara, ferma)</em>: Basta.<br>Guardate lei. L'acqua.<br>Non urla. Non si mette a discutere con i sassi che trova.<br>Non si vendica delle rive troppo strette.<br>Emily Dickinson diceva:<br>«L'acqua che passa non chiede permesso. Va. E nel suo andare crea la strada».</p>
+          <p><strong>RAGAZZA</strong>: Siate come lei…<br>scorre libera, chiara e fresca.<br>E proprio perché non si irrigidisce,<br>trova sempre la via.</p>
+        </div>
+
+        <div class="battuta" data-tags="tutti Sora Acqua Francesco">
+          <p><strong>FRANCESCO</strong> <em>(avvicinandosi alla ragazza)</em>:<br>Hai detto la cosa giusta nel momento giusto.<br>Come l'acqua che trova sempre la via tra i sassi.<br>Da oggi ti chiamerò Sorella Acqua.<br>Perché sei umile, preziosa e limpida.<br>E porti pace dove c'era conflitto.</p>
+          <p><strong>CORO</strong>:<br>«Laudato si', mi' Signore, per sora Aqua,<br>la quale è multo utile et humile et pretiosa et casta.»</p>
+        </div>
+
+        <!-- ═══ NOTE ═══ -->
+        <div class="battuta" data-tags="tutti" style="margin-top:48px;padding:20px 24px;border:1px dashed var(--border);color:var(--text-dim);font-size:0.85rem;">
+          <p>⟶ Le scene successive (Quadri 7-12: Sora Madre Terra, Il Lupo, Il Diavolo, Sorella Morte, Sorella Povertà e Finale) sono in fase di revisione e verranno aggiunte a breve.</p>
+        </div>
+
+      </div><!-- #copione-content -->
+    </div><!-- .copione-wrap -->
+  </main>
+
+  <footer class="site-footer"><span class="footer-brand">Progetto Teatro</span><p class="footer-sub">© 2026 Tutti i diritti riservati.</p><span class="engineer-signature">Design curated by Ingeniere</span></footer>
+</div>
+
+<script src="script.js"></script>
+<script>
+function filtraCopione(val) {
+  document.querySelectorAll('#copione-content .battuta').forEach(function(b) {
+    const tags = b.getAttribute('data-tags') || '';
+    if (val === 'tutti') {
+      b.style.display = '';
+    } else {
+      b.style.display = tags.indexOf(val) !== -1 ? '' : 'none';
+    }
+  });
+}
+</script>
+</body>
+</html>

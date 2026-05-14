@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Calendario Prove — Progetto Teatro</title>
+  <meta name="description" content="Calendario delle prove e degli eventi dello spettacolo.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎭</text></svg>">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+
+  <nav class="main-nav" role="navigation" aria-label="Navigazione principale">
+    <a href="index.html" class="logo-box">
+      <div class="logo-circle">PT</div>
+      <span class="logo-name">Progetto Teatro</span>
+    </a>
+    <div class="nav-right">
+      <button class="theme-toggle" id="themeToggle" aria-label="Cambia tema">
+        <span class="toggle-icon" id="toggleIcon">☽</span>
+        <span id="toggleLabel">Chiaro</span>
+      </button>
+      <button class="sidebar-toggle" id="sidebarToggle" aria-label="Apri menu">
+        <span class="bar">☰</span> Menu
+      </button>
+    </div>
+  </nav>
+</div>
+<div class="sidebar-overlay" id="sidebarOverlay"></div>
+<aside class="sidebar" id="sidebar" role="navigation" aria-label="Menu principale">
+  <div class="sidebar-header"><span class="sidebar-brand">Progetto Teatro</span><button class="sidebar-close" id="sidebarClose" aria-label="Chiudi menu">✕</button></div>
+  <nav class="sidebar-nav">
+    <a href="index.html"><span class="link-num">00.</span>Home</a>
+    <a href="spettacolo.html"><span class="link-num">01.</span>Spettacolo</a>
+    <a href="copione.html"><span class="link-num">02.</span>Copione</a>
+    <a href="musiche.html"><span class="link-num">03.</span>Musiche</a>
+    <a href="personaggi.html"><span class="link-num">04.</span>Cast</a>
+    <a href="calendario.html"><span class="link-num">05.</span>Calendario</a>
+    <a href="galleria.html"><span class="link-num">06.</span>Galleria</a>
+    <a href="cantico.html"><span class="link-num">07.</span>Cantico</a>
+    <a href="materiali.html"><span class="link-num">08.</span>Materiali</a>
+    <a href="contatti.html"><span class="link-num">09.</span>Contatti</a>
+  </nav>
+  <div class="sidebar-footer">Stagione 2026</div>
+</aside>
+<div class="container">
+
+  <header class="page-hero reveal">
+    <span class="hero-label">Organizzazione</span>
+    <h1>Calendario Prove</h1>
+    <p>Clicca sui giorni con bordo dorato per visualizzare i dettagli della sessione.</p>
+  </header>
+
+  <main class="section">
+    <div class="calendar-wrap reveal">
+      <div class="cal-header">
+        <button class="cal-nav-btn" id="prevBtn" aria-label="Mese precedente">❮</button>
+        <h2 id="monthYear"></h2>
+        <button class="cal-nav-btn" id="nextBtn" aria-label="Mese successivo">❯</button>
+      </div>
+      <div class="cal-grid" id="calGrid"></div>
+      <div class="cal-annotation" id="calNote" aria-live="polite">
+        Seleziona un giorno evidenziato per visualizzare l'annotazione.
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <span class="footer-brand">Progetto Teatro</span>
+    <p class="footer-sub">© 2026 Tutti i diritti riservati.</p>
+    <span class="engineer-signature">Design curated by Ingeniere</span>
+  </footer>
+
+</div>
+<script src="script.js"></script>
+<script>
+  const events = {
+    "2025-12-18": "📅 Giovedì 18 Dicembre 2025 — Prove dalle 13:30 alle 16:30",
+    "2026-01-15": "🎂 Giovedì 15 Gennaio 2026 — Compleanno di Samia e prove dalle 13:30 alle 16:30",
+    "2026-01-22": "📅 Giovedì 22 Gennaio 2026 — Prove dalle 13:30 alle 16:30",
+    "2026-01-29": "📅 Giovedì 29 Gennaio 2026 — Prove dalle 13:30 alle 16:30",
+    "2026-02-05": "📅 Giovedì 5 Febbraio 2026 — Prove dalle 13:30 alle 16:30",
+    "2026-02-12": "📅 Giovedì 12 Febbraio 2026 — Prove dalle 13:30 alle 16:30",
+    "2026-02-19": "📅 Giovedì 19 Febbraio 2026 — Prove dalle 13:30 alle 16:30",
+    "2026-02-26": "📅 Giovedì 26 Febbraio 2026 — Prove dalle 13:30 alle 16:30",
+    "2026-03-05": "📅 Giovedì 5 Marzo 2026 — Prove dalle 13:30 alle 16:30",
+    "2026-03-12": "📅 Giovedì 12 Marzo 2026 — Prove dalle 13:30 alle 16:30",
+    "2026-03-19": "📅 Giovedì 19 Marzo 2026 — Prove dalle 13:30 alle 16:30",
+    "2026-03-26": "📅 Giovedì 26 Marzo 2026 — Prove dalle 13:30 alle 16:30",
+    "2026-04-02": "📅 Giovedì 2 Aprile 2026 — Prove dalle 13:30 alle 16:30",
+    "2026-04-09": "📅 Giovedì 9 Aprile 2026 — Prove dalle 13:30 alle 16:30",
+    "2026-04-16": "📅 Giovedì 16 Aprile 2026 — Prove dalle 13:30 alle 16:30",
+    "2026-04-23": "📅 Giovedì 23 Aprile 2026 — Prove dalle 13:30 alle 16:30",
+    "2026-04-30": "📅 Giovedì 30 Aprile 2026 — Prove dalle 13:30 alle 16:30",
+    "2026-05-07": "📅 Giovedì 7 Maggio 2026 — Prove dalle 13:30 alle 16:30",
+    "2026-05-14": "🎭 Giovedì 14 Maggio 2026 — DEBUTTO DELLO SPETTACOLO alla Sala Consiliare"
+  };
+  let current = new Date(2025, 11);
+
+  function render(date) {
+    const year = date.getFullYear(), month = date.getMonth();
+    const grid = document.getElementById('calGrid');
+    document.getElementById('monthYear').textContent =
+      date.toLocaleString('it-IT', { month: 'long', year: 'numeric' });
+    grid.innerHTML = '';
+    ['Lun','Mar','Mer','Gio','Ven','Sab','Dom'].forEach(d => {
+      const el = document.createElement('div');
+      el.className = 'cal-day-name'; el.textContent = d;
+      grid.appendChild(el);
+    });
+    const firstDay = new Date(year, month, 1).getDay();
+    for (let i = 0; i < (firstDay === 0 ? 6 : firstDay - 1); i++)
+      grid.appendChild(document.createElement('div'));
+    for (let d = 1; d <= new Date(year, month + 1, 0).getDate(); d++) {
+      const iso = `${year}-${String(month+1).padStart(2,'0')}-${String(d).padStart(2,'0')}`;
+      const el = document.createElement('div');
+      el.className = 'day' + (events[iso] ? ' has-event' : '');
+      el.textContent = d;
+      if (events[iso]) {
+        el.setAttribute('role', 'button'); el.setAttribute('tabindex', '0');
+        el.addEventListener('click', () => document.getElementById('calNote').textContent = events[iso]);
+        el.addEventListener('keydown', e => { if (e.key === 'Enter') document.getElementById('calNote').textContent = events[iso]; });
+      }
+      grid.appendChild(el);
+    }
+  }
+  document.getElementById('prevBtn').addEventListener('click', () => { current.setMonth(current.getMonth()-1); render(current); });
+  document.getElementById('nextBtn').addEventListener('click', () => { current.setMonth(current.getMonth()+1); render(current); });
+  render(current);
+</script>
+</body>
+</html>
