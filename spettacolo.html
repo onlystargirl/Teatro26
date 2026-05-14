@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Spettacolo — Progetto Teatro</title>
+  <meta name="description" content="Visione artistica e temi dello spettacolo ispirato al Cantico delle Creature.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎭</text></svg>">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <nav class="main-nav" role="navigation" aria-label="Navigazione principale">
+    <a href="index.html" class="logo-box"><div class="logo-circle">PT</div><span class="logo-name">Progetto Teatro</span></a>
+    <div class="nav-right">
+      <button class="theme-toggle" id="themeToggle" aria-label="Cambia tema"><span class="toggle-icon" id="toggleIcon">☽</span><span id="toggleLabel">Chiaro</span></button>
+      <button class="sidebar-toggle" id="sidebarToggle" aria-label="Apri menu"><span class="bar">☰</span> Menu</button>
+    </div>
+  </nav>
+</div>
+<div class="sidebar-overlay" id="sidebarOverlay"></div>
+<aside class="sidebar" id="sidebar" role="navigation" aria-label="Menu principale">
+  <div class="sidebar-header"><span class="sidebar-brand">Progetto Teatro</span><button class="sidebar-close" id="sidebarClose" aria-label="Chiudi menu">✕</button></div>
+  <nav class="sidebar-nav">
+    <a href="index.html"><span class="link-num">00.</span>Home</a>
+    <a href="spettacolo.html"><span class="link-num">01.</span>Spettacolo</a>
+    <a href="copione.html"><span class="link-num">02.</span>Copione</a>
+    <a href="musiche.html"><span class="link-num">03.</span>Musiche</a>
+    <a href="personaggi.html"><span class="link-num">04.</span>Cast</a>
+    <a href="calendario.html"><span class="link-num">05.</span>Calendario</a>
+    <a href="galleria.html"><span class="link-num">06.</span>Galleria</a>
+    <a href="cantico.html"><span class="link-num">07.</span>Cantico</a>
+    <a href="materiali.html"><span class="link-num">08.</span>Materiali</a>
+    <a href="contatti.html"><span class="link-num">09.</span>Contatti</a>
+  </nav>
+  <div class="sidebar-footer">Stagione 2026</div>
+</aside>
+<div class="container">
+  <header class="page-hero reveal">
+    <span class="hero-label">Visione Artistica</span>
+    <h1>Lo Spettacolo</h1>
+    <p>Un Francesco moderno, controcorrente, che ci interroga ancora oggi.</p>
+  </header>
+  <main class="section">
+    <article class="prose reveal">
+      <div style="display:flex;gap:32px;flex-wrap:wrap;margin-bottom:44px;padding:28px 32px;border:1px solid var(--border);">
+        <div><span class="overline">Data</span><p style="color:var(--text);font-weight:600;margin-top:4px;">14 Maggio 2026</p></div>
+        <div><span class="overline">Luogo</span><p style="color:var(--text);font-weight:600;margin-top:4px;">Sala Consigliere del comune di Grazzanise</p></div>
+      </div>
+      <p>Il nostro spettacolo prende ispirazione dal <em>Cantico delle Creature</em> di San Francesco, ma non nasce con l'intenzione di riproporlo così com'è stato scritto. Nasce dal desiderio di <em>tradurlo nel nostro tempo</em>, nel linguaggio, nelle immagini e nelle ferite di una generazione che spesso si sente smarrita, giudicata o non ascoltata.</p>
+      <p>Per questo il nostro Francesco non è il santo delle statue o dei libri di storia. È un ragazzo semplice, uno qualunque. Non ha certezze assolute, non ha già trovato Dio, non ha risposte pronte. È uno che osserva il mondo intorno a sé e sente che qualcosa non funziona.</p>
+      <div class="divider"></div>
+      <h3>Il Sole, la Luna, le Stelle</h3>
+      <p>Le creature del Cantico diventano simboli della nostra quotidianità. Il sole non è solo la luce fisica, ma rappresenta ciò che ci dà energia: le passioni, i sogni, le persone che ci tengono in piedi quando tutto crolla. La luna e le stelle sono i momenti di silenzio, la solitudine, le notti in cui i pensieri fanno più rumore del giorno.</p>
+      <h3>L'Acqua e il Fuoco</h3>
+      <p>L'acqua è la fragilità: può dissetare ma anche travolgere. Rappresenta le emozioni che spesso non sappiamo gestire. Il fuoco è l'impulso, l'istinto, il desiderio — può scaldare, ma può anche bruciare.</p>
+      <h3>La Terra e il Lupo</h3>
+      <p>La terra è il luogo da cui veniamo: la famiglia, il contesto sociale, le radici. Il lupo rappresenta tutte quelle realtà che divorano le persone — la droga, la dipendenza dal potere, l'esclusione sociale.</p>
+      <h3>Il Perdono</h3>
+      <p>Un tema centrale che nel nostro spettacolo non è mai facile o immediato. Non è dimenticare, non è giustificare. È l'unico modo per spezzare il ciclo dell'odio.</p>
+      <blockquote>«In un tempo in cui tutto corre veloce, questo spettacolo chiede di fermarsi. Di guardare. Di riconoscere l'altro non come un nemico, ma come una creatura, fragile e contraddittoria, esattamente come noi.»</blockquote>
+      <div style="margin-top:44px;"><a href="copione.html" class="btn-accent">Leggi il copione completo</a></div>
+    </article>
+  </main>
+  <footer class="site-footer"><span class="footer-brand">Progetto Teatro</span><p class="footer-sub">© 2026 Tutti i diritti riservati.</p><span class="engineer-signature">Design curated by Ingeniere</span></footer>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

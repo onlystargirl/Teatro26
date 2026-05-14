@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Personaggi — Progetto Teatro</title>
+  <meta name="description" content="Il cast dello spettacolo: personaggi, interpreti e citazioni.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎭</text></svg>">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+
+  <nav class="main-nav" role="navigation" aria-label="Navigazione principale">
+    <a href="index.html" class="logo-box">
+      <div class="logo-circle">PT</div>
+      <span class="logo-name">Progetto Teatro</span>
+    </a>
+    <div class="nav-right">
+      <button class="theme-toggle" id="themeToggle" aria-label="Cambia tema">
+        <span class="toggle-icon" id="toggleIcon">☽</span>
+        <span id="toggleLabel">Chiaro</span>
+      </button>
+      <button class="sidebar-toggle" id="sidebarToggle" aria-label="Apri menu">
+        <span class="bar">☰</span> Menu
+      </button>
+    </div>
+  </nav>
+</div>
+<div class="sidebar-overlay" id="sidebarOverlay"></div>
+<aside class="sidebar" id="sidebar" role="navigation" aria-label="Menu principale">
+  <div class="sidebar-header"><span class="sidebar-brand">Progetto Teatro</span><button class="sidebar-close" id="sidebarClose" aria-label="Chiudi menu">✕</button></div>
+  <nav class="sidebar-nav">
+    <a href="index.html"><span class="link-num">00.</span>Home</a>
+    <a href="spettacolo.html"><span class="link-num">01.</span>Spettacolo</a>
+    <a href="copione.html"><span class="link-num">02.</span>Copione</a>
+    <a href="musiche.html"><span class="link-num">03.</span>Musiche</a>
+    <a href="personaggi.html"><span class="link-num">04.</span>Cast</a>
+    <a href="calendario.html"><span class="link-num">05.</span>Calendario</a>
+    <a href="galleria.html"><span class="link-num">06.</span>Galleria</a>
+    <a href="cantico.html"><span class="link-num">07.</span>Cantico</a>
+    <a href="materiali.html"><span class="link-num">08.</span>Materiali</a>
+    <a href="contatti.html"><span class="link-num">09.</span>Contatti</a>
+  </nav>
+  <div class="sidebar-footer">Stagione 2026</div>
+</aside>
+<div class="container">
+
+  <header class="page-hero reveal">
+    <span class="hero-label">Il Cast</span>
+    <h1>Personaggi</h1>
+    <p>Passa il cursore sulle carte per scoprire gli interpreti di ogni ruolo.</p>
+  </header>
+
+  <main class="section">
+    <div class="deck reveal">
+
+      <div class="flip-card" tabindex="0" aria-label="San Francesco — Maiello Salvatore">
+        <div class="flip-face flip-front">
+          <span class="char-icon">✞</span>
+          <p class="char-name">San Francesco</p>
+        </div>
+        <div class="flip-face flip-back">
+          <img src="img/san-francesco.jpg" alt="" onerror="this.style.display='none'">
+          <h3>San Francesco</h3>
+          <p class="actor">Maiello Salvatore</p>
+          <p>"Un ragazzo che sceglie la semplicità controcorrente."</p>
+        </div>
+      </div>
+
+      <div class="flip-card" tabindex="0" aria-label="Frate Sole — Tartaglione Michele">
+        <div class="flip-face flip-front">
+          <span class="char-icon">☼</span>
+          <p class="char-name">Frate Sole</p>
+        </div>
+        <div class="flip-face flip-back">
+          <img src="img/frate-sole.jpg" alt="" onerror="this.style.display='none'">
+          <h3>Frate Sole</h3>
+          <p class="actor">Tartaglione Michele</p>
+          <p>"La luce che illumina senza flash, dal cuore."</p>
+        </div>
+      </div>
+
+      <div class="flip-card" tabindex="0" aria-label="Sora Luna — Nocera Annarita">
+        <div class="flip-face flip-front">
+          <span class="char-icon">☾</span>
+          <p class="char-name">Sora Luna</p>
+        </div>
+        <div class="flip-face flip-back">
+          <img src="img/frate-luna.jpg" alt="" onerror="this.style.display='none'">
+          <h3>Sora Luna</h3>
+          <p class="actor">Nocera Annarita</p>
+          <p>"La poesia che rischiara il buio con sogni silenziosi."</p>
+        </div>
+      </div>
+
+      <div class="flip-card" tabindex="0" aria-label="Sorella Stella 1 — Selena">
+        <div class="flip-face flip-front">
+          <span class="char-icon">☆</span>
+          <p class="char-name">Sorella Stella 1</p>
+        </div>
+        <div class="flip-face flip-back">
+          <img src="img/sorelle-stelle.jpg" alt="" onerror="this.style.display='none'">
+          <h3>Sorella Stella 1</h3>
+          <p class="actor">Selena</p>
+          <p>"Sapienza che brilla senza oscurare l'altro."</p>
+        </div>
+      </div>
+
+      <div class="flip-card" tabindex="0" aria-label="Sorella Stella 2 — Cai Disina">
+        <div class="flip-face flip-front">
+          <span class="char-icon">☆</span>
+          <p class="char-name">Sorella Stella 2</p>
+        </div>
+        <div class="flip-face flip-back">
+          <img src="img/sorelle-stelle.jpg" alt="" onerror="this.style.display='none'">
+          <h3>Sorella Stella 2</h3>
+          <p class="actor">Cai Disina</p>
+          <p>"Sapienza che brilla senza oscurare l'altro."</p>
+        </div>
+      </div>
+
+      <div class="flip-card" tabindex="0" aria-label="La Narratrice — Iodice Martina">
+        <div class="flip-face flip-front">
+          <span class="char-icon">✎</span>
+          <p class="char-name">La Narratrice</p>
+        </div>
+        <div class="flip-face flip-back">
+          <img src="img/narratrice.jpg" alt="" onerror="this.style.display='none'">
+          <h3>La Narratrice</h3>
+          <p class="actor">Iodice Martina</p>
+          <p>"Voce che guida e intreccia le storie."</p>
+        </div>
+      </div>
+
+      <div class="flip-card" tabindex="0" aria-label="Il Lupo — Masiello Giuseppe">
+        <div class="flip-face flip-front">
+          <span class="char-icon">⚠</span>
+          <p class="char-name">Il Lupo</p>
+        </div>
+        <div class="flip-face flip-back">
+          <img src="img/lupo.jpg" alt="" onerror="this.style.display='none'">
+          <h3>Il Lupo</h3>
+          <p class="actor">Masiello Giuseppe</p>
+          <p>"Forza selvaggia che rivela le ferite invisibili."</p>
+        </div>
+      </div>
+
+      <div class="flip-card" tabindex="0" aria-label="Sorella Acqua — Begar Samia Maria">
+        <div class="flip-face flip-front">
+          <span class="char-icon">💧</span>
+          <p class="char-name">Sorella Acqua</p>
+        </div>
+        <div class="flip-face flip-back">
+          <img src="img/sore-acqua.jpg" alt="" onerror="this.style.display='none'">
+          <h3>Sorella Acqua</h3>
+          <p class="actor">Begar Samia Maria</p>
+          <p>"Scorre libera, chiarisce e accoglie."</p>
+        </div>
+      </div>
+
+      <div class="flip-card" tabindex="0" aria-label="Il Diavolo — Leon Gabriele">
+        <div class="flip-face flip-front">
+          <span class="char-icon">🔱</span>
+          <p class="char-name">Il Diavolo</p>
+        </div>
+        <div class="flip-face flip-back">
+          <img src="img/diavolo.jpg" alt="" onerror="this.style.display='none'">
+          <h3>Il Diavolo</h3>
+          <p class="actor">Leon Gabriele</p>
+          <p>"Tentazione che sussurra nell'ombra."</p>
+        </div>
+      </div>
+
+      <div class="flip-card" tabindex="0" aria-label="Sorella Madre Terra — Aisen Stepheny Udi">
+        <div class="flip-face flip-front">
+          <span class="char-icon">🌿</span>
+          <p class="char-name">Sorella Madre Terra</p>
+        </div>
+        <div class="flip-face flip-back">
+          <img src="img/madre-terra.jpg" alt="" onerror="this.style.display='none'">
+          <h3>Sorella Madre Terra</h3>
+          <p class="actor">Aisen Stepheny Udi</p>
+          <p>"Mani che seminano vita anche tra le ferite."</p>
+        </div>
+      </div>
+
+      <div class="flip-card" tabindex="0" aria-label="Fratello Fuoco — Caranci Luca">
+        <div class="flip-face flip-front">
+          <span class="char-icon">🔥</span>
+          <p class="char-name">Fratello Fuoco</p>
+        </div>
+        <div class="flip-face flip-back">
+          <img src="img/fratello-fuoco.jpg" alt="" onerror="this.style.display='none'">
+          <h3>Fratello Fuoco</h3>
+          <p class="actor">Caranci Luca</p>
+          <p>"Fiamma che brucia ma può scaldare."</p>
+        </div>
+      </div>
+
+      <div class="flip-card" tabindex="0" aria-label="Sorella Vento — Sigari Giulia">
+        <div class="flip-face flip-front">
+          <span class="char-icon">🌬</span>
+          <p class="char-name">Sorella Vento</p>
+        </div>
+        <div class="flip-face flip-back">
+          <img src="img/sorella-vento.jpg" alt="" onerror="this.style.display='none'">
+          <h3>Sorella Vento</h3>
+          <p class="actor">Sigari Giulia</p>
+          <p>"Soffio che muove e libera."</p>
+        </div>
+      </div>
+
+      <div class="flip-card" tabindex="0" aria-label="Sorella Morte Corporale — Samia">
+        <div class="flip-face flip-front">
+          <span class="char-icon">🕊</span>
+          <p class="char-name">Sorella Morte</p>
+        </div>
+        <div class="flip-face flip-back">
+          <img src="img/morte.jpg" alt="" onerror="this.style.display='none'">
+          <h3>Sorella Morte Corporale</h3>
+          <p class="actor">Samia</p>
+          <p>"Passaggio gentile che accompagna con cura."</p>
+        </div>
+      </div>
+
+      <div class="flip-card" tabindex="0" aria-label="Sorella Povertà — Sharon">
+        <div class="flip-face flip-front">
+          <span class="char-icon">♡</span>
+          <p class="char-name">Sorella Povertà</p>
+        </div>
+        <div class="flip-face flip-back">
+          <img src="img/povertà.jpg" alt="" onerror="this.style.display='none'">
+          <h3>Sorella Povertà</h3>
+          <p class="actor">Sharon</p>
+          <p>"Umiltà che diventa ricchezza di cuore."</p>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <span class="footer-brand">Progetto Teatro</span>
+    <p class="footer-sub">© 2026 Tutti i diritti riservati.</p>
+    <span class="engineer-signature">Design curated by Ingeniere</span>
+  </footer>
+
+</div>
+<script src="script.js"></script>
+</body>
+</html>
