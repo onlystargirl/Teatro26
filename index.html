@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Teatro 2026 — Cantico delle Creature</title>
+  <meta name="description" content="Sito ufficiale dello spettacolo scolastico ispirato al Cantico delle Creature di San Francesco. Stagione 2026.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎭</text></svg>">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .home-hero {
+      height: 72vh; display: flex; flex-direction: column;
+      justify-content: center; align-items: center;
+      text-align: center; padding: 0 20px;
+    }
+    .home-hero h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(3rem, 9vw, 6.5rem);
+      font-weight: 700; font-style: italic;
+      line-height: 0.9; margin-bottom: 28px;
+    }
+    .home-hero p { max-width: 580px; color: var(--text-dim); font-size: 1.05rem; margin-bottom: 40px; }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <!-- ── Nav ── -->
+  <nav class="main-nav" role="navigation" aria-label="Navigazione principale">
+    <a href="index.html" class="logo-box" aria-label="Home">
+      <div class="logo-circle">PT</div>
+      <span class="logo-name">Progetto Teatro</span>
+    </a>
+    <div class="nav-right">
+      <button class="theme-toggle" id="themeToggle" aria-label="Cambia tema">
+        <span class="toggle-icon" id="toggleIcon">☽</span>
+        <span id="toggleLabel">Chiaro</span>
+      </button>
+      <button class="sidebar-toggle" id="sidebarToggle" aria-label="Apri menu">
+        <span class="bar">☰</span> Menu
+      </button>
+    </div>
+  </nav>
+
+</div><!-- /container - sidebar is outside -->
+
+<!-- ── Sidebar Overlay ── -->
+<div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+<!-- ── Sidebar ── -->
+<aside class="sidebar" id="sidebar" role="navigation" aria-label="Menu principale">
+  <div class="sidebar-header">
+    <span class="sidebar-brand">Progetto Teatro</span>
+    <button class="sidebar-close" id="sidebarClose" aria-label="Chiudi menu">✕</button>
+  </div>
+  <nav class="sidebar-nav">
+    <a href="index.html"><span class="link-num">00.</span>Home</a>
+    <a href="spettacolo.html"><span class="link-num">01.</span>Spettacolo</a>
+    <a href="copione.html"><span class="link-num">02.</span>Copione</a>
+    <a href="musiche.html"><span class="link-num">03.</span>Musiche</a>
+    <a href="personaggi.html"><span class="link-num">04.</span>Cast</a>
+    <a href="calendario.html"><span class="link-num">05.</span>Calendario</a>
+    <a href="galleria.html"><span class="link-num">06.</span>Galleria</a>
+    <a href="cantico.html"><span class="link-num">07.</span>Cantico</a>
+    <a href="materiali.html"><span class="link-num">08.</span>Materiali</a>
+    <a href="contatti.html"><span class="link-num">09.</span>Contatti</a>
+  </nav>
+  <div class="sidebar-footer">Stagione 2026</div>
+</aside>
+
+<div class="container">
+
+  <!-- ── Hero ── -->
+  <section class="home-hero reveal">
+    <span class="hero-label">Produzione Stagione 2026</span>
+    <h1>L'Eredità del<br>Cantico</h1>
+    <p>Oltre il palcoscenico. Una visione contemporanea dell'opera di San Francesco tra minimalismo estetico e forza spirituale.</p>
+    <a href="spettacolo.html" class="btn-accent">Esplora il Progetto</a>
+  </section>
+
+  <!-- ── Grid ── -->
+  <section class="section">
+    <h2 class="section-heading reveal">Archivio Digitale</h2>
+    <div class="main-grid reveal">
+      <a href="copione.html" class="card"><span class="card-num">01.</span><h3>Il Copione</h3><p>La parola al centro. Una riscrittura moderna che preserva l'anima medievale trasportandola nel presente.</p></a>
+      <a href="spettacolo.html" class="card"><span class="card-num">02.</span><h3>Lo Spettacolo</h3><p>I temi, i simbolismi e la visione artistica che danno vita al racconto.</p></a>
+      <a href="musiche.html" class="card"><span class="card-num">03.</span><h3>Musiche</h3><p>Dalle tracce rituali ai brani contemporanei: l'anima acustica del dramma.</p></a>
+      <a href="calendario.html" class="card"><span class="card-num">04.</span><h3>Calendario</h3><p>Tutte le date delle prove e gli appuntamenti della compagnia.</p></a>
+      <a href="galleria.html" class="card"><span class="card-num">05.</span><h3>Galleria</h3><p>Un viaggio fotografico attraverso le fasi della produzione.</p></a>
+      <a href="personaggi.html" class="card"><span class="card-num">06.</span><h3>Cast</h3><p>I protagonisti che incarneranno le creature e daranno voce all'invocazione.</p></a>
+      <a href="cantico.html" class="card"><span class="card-num">07.</span><h3>Cantico Originale</h3><p>Il testo originale di San Francesco con parafrasi e analisi storico-letteraria.</p></a>
+      <a href="materiali.html" class="card"><span class="card-num">08.</span><h3>Materiali</h3><p>Risorse, link e riferimenti utili per la produzione.</p></a>
+      <a href="contatti.html" class="card"><span class="card-num">09.</span><h3>Contatti</h3><p>Scrivi al team del progetto o consulta i riferimenti.</p></a>
+    </div>
+  </section>
+
+  <footer class="site-footer" role="contentinfo">
+    <span class="footer-brand">Progetto Teatro</span>
+    <p class="footer-sub">© 2026 Tutti i diritti riservati.</p>
+    <span class="engineer-signature">Design curated by Ingeniere</span>
+  </footer>
+
+</div>
+<script src="script.js"></script>
+</body>
+</html>
